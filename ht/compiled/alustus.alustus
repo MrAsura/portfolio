@@ -1,0 +1,152 @@
+<yleiset>
+
+10 10
+4
+
+</yleiset>
+
+
+<aurinkokunta>
+Mordor
+10 1
+5
+A E
+
+A K
+
+K K
+
+K K
+
+K K
+
+</aurinkokunta>
+
+<aurinkokunta>
+Tyhja
+9
+ 9
+0
+</aurinkokunta>
+<aurinkokunta>
+Beta Ceti
+2 3
+2
+A K
+A K
+</aurinkokunta>
+
+<aurinkokunta>
+Sirius
+5 7
+5
+A K
+K K
+
+A K
+
+K E
+
+K K
+
+</aurinkokunta>
+<aurinkokunta>
+Deathstar
+1 1
+
+1
+
+A E
+
+</aurinkokunta>
+
+<aurinkokunta>
+Helios
+5 5
+
+5
+
+K K
+
+K K
+
+K K
+
+K K
+
+K K
+
+</aurinkokunta>
+
+<aurinkokunta>
+Aurinko
+8 9
+
+4
+
+A E
+
+A K
+
+A K
+
+A K
+
+</aurinkokunta>
+
+<aurinkokunta>
+Eden
+3 2
+
+5
+
+A K
+
+K K
+
+K K
+
+A K
+
+K E
+
+</aurinkokunta>
+<aurinkokunta>
+P3X 888
+3 8
+2
+A K
+
+K K
+</aurinkokunta>
+<aurinkokunta>
+KS7 535
+7 3
+2
+K K
+
+K K
+</aurinkokunta>
+
+<pelaaja>
+Sau "Eye in the sky" ron
+Mordor
+1
+</pelaaja>
+<pelaaja>
+Gandalf the "Run you fools" white
+Sirius
+1
+</pelaaja>
+<pelaaja>
+Luke "NOOoOOoo" Skywalker
+Aurinko
+4
+
+</pelaaja>
+<pelaaja>
+Darth "I am your father" Vader
+Deathstar
+1
+
+</pelaaja>
