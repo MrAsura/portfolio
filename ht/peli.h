@@ -121,7 +121,7 @@ const string Y_PELAAJAVIRHE_ =
 const string A_NIMIVIRHE_ = 
   "Alustusvirhe: Virheellinen aurinkokunnan nimi.";
 const string A_SAMANIMIVIRHE_ = 
-  "Alustusvirhe: Virheellinen aurinkokunnan nimi.";
+  "Alustusvirhe: Virheellinen aurinkokunnan nimi (sama).";
 const string A_SIJAINTIVIRHE_ = 
   "Alustusvirhe: Virheelliset aurinkokunnan koordinaatit.";
 const string A_KOKOVIRHE_ = 
@@ -135,7 +135,7 @@ const string A_KTYYPPIVIRHE_ =
 const string P_NIMIVIRHE_ = 
   "Alustusvirhe: Virheellinen pelaajan nimi.";
 const string P_AURINKOKUNTAVIRHE_ =
-  "Alustusvirhe: Virheellinen aurinkokunnan nimi.";
+  "Alustusvirhe: Virheellinen aurinkokunnan nimi (pelaaja).";
 const string P_ALKUPAIKKAVIRHE_ = 
   "Alustusvirhe: Virheellinen kotiaurinkokunta.";
 const string P_ALKUPLANEETTAVIRHE_ = 

@@ -549,7 +549,13 @@ bool Peli::matkaTarkistus( string kohde, int& sijainti, bool tulosteet )const
    if( galaxi_.at(sijainti)->oleskelija() != 0 )
    {
       if( tulosteet )
-      {         
+      {  
+		 //Easteregg
+         if( galaxi_.at(sijainti)->nimi() == "Mordor" )
+         {
+            cout << "One does not simply fly into Mordor." << endl;
+         }
+
          cerr << MAHDUVIRHE << endl;
       }
       return false;
@@ -639,9 +645,12 @@ bool Peli::alusta( const char* alustustiedosto, bool& loppu )
    Planeetta apu_p = { KAASU, EI, 0 };
    vector<Planeetta> apu_planeetat(0);
    Aurinkokunta* a_osoitin = 0;
+   int pos = 1; //debugging
 
    while( tagi == "<aurinkokunta>" )
    {
+		
+		
       getline( tiedosto, a_nimi ); //otetaan välit pois
       getline( tiedosto, a_nimi );
                   
@@ -654,7 +663,7 @@ bool Peli::alusta( const char* alustustiedosto, bool& loppu )
       
       if( a_nimi.size() < 1 || a_nimi.size() > 79 || !isupper(a_nimi.at(0)) )
       {
-         cerr << A_NIMIVIRHE_  << endl;
+         cerr << A_NIMIVIRHE_  << endl << pos << ". aurinkokunta " << endl;
          
          return false;
       }
@@ -664,7 +673,7 @@ bool Peli::alusta( const char* alustustiedosto, bool& loppu )
       {
          if( !isalnum(a_nimi.at(i)) && !isspace(a_nimi.at(i)) )
          {
-            cerr << A_NIMIVIRHE_  << endl;
+            cerr << A_NIMIVIRHE_  << endl << pos << ". aurinkokunta (laiton)" << endl;
             
             return false;
          }
@@ -783,6 +792,7 @@ bool Peli::alusta( const char* alustustiedosto, bool& loppu )
       tiedosto >> tagi;
       
       ++aurinkokuntia;
+	  ++pos;
       
    }
    
@@ -815,13 +825,13 @@ bool Peli::alusta( const char* alustustiedosto, bool& loppu )
    Pelaaja *p_osoitin = 0;
    
    int p_num = 1;
-   
+
    while( tagi == "<pelaaja>" )
    {
       getline( tiedosto, p_nimi ); //luetaan välit pois
       getline( tiedosto, p_nimi );
           
-      if( p_nimi.size() < 1 || p_nimi.size() > 37 )
+      if( p_nimi.size() < 1 || p_nimi.size() > 74 )
       {
          cerr << P_NIMIVIRHE_ << endl;
          
@@ -864,7 +874,7 @@ bool Peli::alusta( const char* alustustiedosto, bool& loppu )
       
       if( !on_a )
       {            
-         cerr << P_AURINKOKUNTAVIRHE_ << endl;
+         cerr << P_AURINKOKUNTAVIRHE_ << endl << p_nimi << " pelaaja" << endl;
          
          return false;
       }         

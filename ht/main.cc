@@ -19,8 +19,15 @@ int main( int argc, char* argv[] )
    Peli moottori;
    bool lopeta = false;
    string init = _pgmptr;
- 
-   moottori.alusta( init.replace( init.end()-6, init.end(), "alustus.alustus").c_str(), lopeta );
+
+   
+   // Virheilmoitus annetaan jäsenfunktiossa
+   if( !moottori.alusta( init.replace( init.end()-6, init.end(), "alustus.alustus").c_str(), lopeta ) )
+   {
+	   system("pause");
+       return EXIT_FAILURE;
+   }
+
    /*
    //tutkitaan parametrien oikeellisuus
    if( argc == 3 && argv[2] != 0 )
@@ -56,5 +63,6 @@ int main( int argc, char* argv[] )
       komentotulkki( lopeta, moottori );
    }
       
+   system("pause");
    return EXIT_SUCCESS;
 }
