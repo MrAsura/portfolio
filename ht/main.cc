@@ -1,4 +1,4 @@
-// P��ohjelma
+// Päähjelma
 
 #include <iostream>
 #include <cstdlib>
@@ -21,7 +21,7 @@ int main( int argc, char* argv[] )
    string init = _pgmptr;
 
    //win toteutus
-   // Virheilmoitus annetaan j�senfunktiossa
+   // Virheilmoitus annetaan jäsenfunktiossa
    if( !moottori.alusta( init.replace( init.end()-6, init.end(), "alustus.alustus").c_str(), lopeta ) )
    {
 	   system("pause");
@@ -34,7 +34,7 @@ int main( int argc, char* argv[] )
    {
       if( argv[1][0] == '-' && argv[1][1] == 'a' )
       {                 
-          // Virheilmoitus annetaan j�senfunktiossa
+          // Virheilmoitus annetaan jäsenfunktiossa
          if( !moottori.alusta( argv[2], lopeta ) )
          {
             return EXIT_FAILURE;
@@ -53,7 +53,7 @@ int main( int argc, char* argv[] )
       return EXIT_FAILURE;
    }
    */
-   //Komentotulkki osuus alkaa t�st�
+   //Komentotulkki osuus alkaa tästä
    //Ekaksi tallennetaan luettelo pelaajista ja muuta tietoa
    
    while( !lopeta && !cin.eof() )
