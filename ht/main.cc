@@ -1,4 +1,4 @@
-// Pääohjelma
+// Pï¿½ï¿½ohjelma
 
 #include <iostream>
 #include <cstdlib>
@@ -20,21 +20,21 @@ int main( int argc, char* argv[] )
    bool lopeta = false;
    string init = _pgmptr;
 
-   
-   // Virheilmoitus annetaan jäsenfunktiossa
+   //win toteutus
+   // Virheilmoitus annetaan jï¿½senfunktiossa
    if( !moottori.alusta( init.replace( init.end()-6, init.end(), "alustus.alustus").c_str(), lopeta ) )
    {
 	   system("pause");
        return EXIT_FAILURE;
    }
 
-   /*
+   /* alkuperÃ¤inen toteutus
    //tutkitaan parametrien oikeellisuus
    if( argc == 3 && argv[2] != 0 )
    {
       if( argv[1][0] == '-' && argv[1][1] == 'a' )
       {                 
-          // Virheilmoitus annetaan jäsenfunktiossa
+          // Virheilmoitus annetaan jï¿½senfunktiossa
          if( !moottori.alusta( argv[2], lopeta ) )
          {
             return EXIT_FAILURE;
@@ -53,7 +53,7 @@ int main( int argc, char* argv[] )
       return EXIT_FAILURE;
    }
    */
-   //Komentotulkki osuus alkaa tästä
+   //Komentotulkki osuus alkaa tï¿½stï¿½
    //Ekaksi tallennetaan luettelo pelaajista ja muuta tietoa
    
    while( !lopeta && !cin.eof() )
