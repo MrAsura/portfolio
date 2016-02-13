@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.AddItemFragment"
+    android:id="@+id/add_item_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/main_layout"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions|textCapWords|textPersonName"
+            android:ems="10"
+            android:id="@+id/name_edit"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:contentDescription="Enter name"
+            android:hint="Enter name"
+            android:capitalize="words" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/iban_edit"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:hint="Enter IBAN"
+            android:inputType="textNoSuggestions|textCapCharacters" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add item"
+            android:id="@+id/add_button"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</FrameLayout>
